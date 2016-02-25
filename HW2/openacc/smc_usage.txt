@@ -1,0 +1,23 @@
+SMC usage
+# load modules for GPU compiler
+module load compilers-extra
+module load cuda
+module load pgi
+# submit jobs on smc
+bsub -q gpu -n1 -x -R select[k20] -o out%J -e error.%J ./myjob
+
+
+# Simple Job submission script: myjob_script
+#/bin/bash –l
+#BSUB –q gpu
+#BSUB –n 16 # Number of compute cores
+#BSUB –R select[k20] # to select k20 nodes –R select[fermi] for Fermi nodes #BSUB –e erro.%J
+#BSUB –o output.%J
+#BSUB –x #For Exclusive
+cd /scratch/<uid>
+module load compilers-extra
+module load cuda
+module load pgi
+./myapps
+# Usage of myjob_script
+$ bsub < myjob_script

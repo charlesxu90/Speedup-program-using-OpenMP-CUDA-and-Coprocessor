@@ -1,0 +1,16 @@
+Reference code info: nt=110    dt=9.057110e-04
+
+******************************************************
+Performance results
+******************************************************
+CPU EXECUTION TIME OF TIME LOOP = 637.2257
+Total memory allocation ~ 4271 MBytes
+time/test(s)     : 6.372257e+02
+
+MStencil/s : 0.566431  
+******************************************************
+******************************************************
+PAPI Program Counter Information:
+No. of conditional branch instructions:	 40483120541
+No. of floating point operations:	 687353378870
+******************************************************

@@ -1,0 +1,34 @@
+Introduction guide to Xeon Phi: 
+/home/Oct-2012_SDP_Intel_Xeon_Phi_Coprocessor_Quick_Start_Developers_Guide_version_1_0.pdf
+
+// setup Intel compiler environment
+cp -rf /opt/intel/composer_xe_2013/lib/mic ~ #Copy icc compiler
+source /opt/intel/inspector_xe_2013/inspxe-vars.sh
+source /opt/intel/bin/iccvars.sh intel64
+export LANG=C 
+export LC_ALL=C 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/mic   
+
+// compile OpenMP program (on the server)
+icc -mmic -vec-report3 -openmp your_program.c #Add path to icc compiler
+
+// login to MIC
+ssh mic0
+or
+ssh mic1
+
+// then run... as usual
+export OMP_NUM_THREADS=xxx
+./your_program
+
+To get started using Intel(R) Inspector XE 2013 Update 9:
+  - To set your environment variables:
+    - csh/tcsh users: source /opt/intel/inspector_xe_2013/inspxe-vars.csh
+    - bash users: source /opt/intel/inspector_xe_2013/inspxe-vars.sh
+  - To start the graphical user interface: inspxe-gui
+  - To use the command-line interface: inspxe-cl
+  - For more getting started resources:
+/opt/intel/inspector_xe_2013/documentation/en/welcomepage/get_started.html
+
+To view movies and additional training, visit
+http://www.intel.com/software/products

@@ -1,0 +1,26 @@
+
+Accelerator Kernel Timing data
+/scratch/xux/cs280/hw2/openacc/src/driver.c
+  main
+    189: region entered 28 times
+        time(us): total=11,257,011 init= region=11,257,010
+                  kernels=11,256,445
+        w/o init: total=11,257,010 max=438,801 min=381,996 avg=402,036
+        193: kernel launched 28 times
+            grid: [256x256]  block: [64x4]
+            time(us): total=11,256,445 max=438,705 min=381,977 avg=402,015
+/scratch/xux/cs280/hw2/openacc/src/driver.c
+  main
+    163: region entered 28 times
+        time(us): total=10,437,654 init=3 region=10,437,651
+                  kernels=10,436,945
+        w/o init: total=10,437,651 max=425,818 min=332,468 avg=372,773
+        167: kernel launched 28 times
+            grid: [256x256]  block: [64x4]
+            time(us): total=10,436,945 max=425,583 min=332,457 avg=372,748
+/scratch/xux/cs280/hw2/openacc/src/driver.c
+  main
+    160: region entered 1 time
+        time(us): total=24,396,434 init=151,355 region=24,245,079
+                  data=2,549,565
+        w/o init: total=24,245,079 max=24,245,079 min=24,245,079 avg=24,245,079

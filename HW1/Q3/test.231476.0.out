@@ -1,0 +1,38 @@
+./build/MX_0
+0.4158	41967435
+./build/MX_1
+0.2330	42062937
+./build/MX_2
+0.2397	42005254
+./build/MX_3
+0.2392	42004659
+./build/MX_fdelayed-branch
+0.4178	41969087
+./build/MX_ffast-math
+0.3734	21047700
+./build/MX_fgcse
+0.4199	41967323
+./build/MX_fgcse-las
+0.4185	41970569
+./build/MX_fgcse-lm
+0.4206	41969386
+./build/MX_fgcse-sm
+0.4190	41974464
+./build/MX_finlien-functions
+0.4214	41967917
+./build/MX_floop-block
+0.4194	41969863
+./build/MX_floop-interchange
+0.4224	41967938
+./build/MX_fopenmp
+0.4188	41970814
+./build/MX_ftree-loop-distribution
+0.4173	41971820
+./build/MX_funroll-loops
+0.4211	41967508
+./build/MX_funsafe-math-optimizations
+0.3747	21043857
+./build/MX_pthreads
+0.4188	41967799
+./build/MX_size
+0.2413	42003341

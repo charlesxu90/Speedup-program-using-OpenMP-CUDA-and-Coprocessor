@@ -1,0 +1,15 @@
+Reference code info: nt=110    dt=9.057110e-04
+
+******************************************************
+Performance results
+******************************************************
+CPU EXECUTION TIME OF TIME LOOP = 636.2974
+Total memory allocation ~ 4271 MBytes
+time/test(s)     : 6.362974e+02
+
+MStencil/s : 0.567257  
+******************************************************
+******************************************************
+PAPI Program Counter Information:
+L1 data cache accesses:	 1360071045139
+L1 data cache misses:	 24678215819

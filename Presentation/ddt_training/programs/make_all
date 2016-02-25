@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# export OMPFLAGS="-openmp"
+export OMPFLAGS="-fopenmp" # gcc
+
+FAILURES=""
+for var in `ls -1| egrep -v "make_"`
+do
+   if [ -r ${var}/Makefile ]; then
+      echo
+      echo "Compiling ${var}..."
+      cd ${var}
+      make clean
+      make $* || FAILURES="$FAILURES $var"
+      cd ..
+   else
+      echo
+      echo "No Makefile for ${var}..."
+   fi
+done
+
+if [ -n "$FAILURES" ]; then
+	echo "The following failed to compile: $FAILURES"
+fi
+
